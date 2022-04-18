@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -10,18 +11,42 @@ public class Weapon : MonoBehaviour
     [SerializeField] float damage = 30;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
+    [SerializeField] Ammo ammoSlot;
+    [SerializeField] float fireRate = 0.5f;
+    [SerializeField] AmmoType ammoType;
+    [SerializeField] TextMeshProUGUI ammoText;
+
+    bool canShoot = true;
+    private void OnEnable()
+    {
+        canShoot = true;
+    }
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        DisplayAmmo();
+        if(Input.GetButtonDown("Fire1") && canShoot == true)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
     }
 
-    private void Shoot()
+    private void DisplayAmmo()
     {
-        PlayMuzzleFlash();
-        ProcessRayCast();
+        int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
+        ammoText.text = currentAmmo.ToString();
+    }
+
+    private IEnumerator Shoot()
+    {
+        canShoot = false;
+        if (ammoSlot.GetCurrentAmmo(ammoType) > 0) 
+        {
+            PlayMuzzleFlash();
+            ProcessRayCast();
+            ammoSlot.ReduceCurrentAmmo(ammoType);
+        }
+        yield return new WaitForSeconds(fireRate);
+        canShoot = true;
     }
 
     private void PlayMuzzleFlash()
