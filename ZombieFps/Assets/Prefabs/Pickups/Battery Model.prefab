@@ -56,6 +56,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +69,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,6 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4857955035830220793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,70 +2064,11 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
+  m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 240000001f000000200000002100000022000000230000002500000026000000270000001e000000
-  m_SelectedEdges:
-  - a: 119
-    b: 120
-  - a: 120
-    b: 121
-  - a: 121
-    b: 119
-  - a: 89
-    b: 90
-  - a: 90
-    b: 91
-  - a: 91
-    b: 89
-  - a: 95
-    b: 96
-  - a: 96
-    b: 97
-  - a: 97
-    b: 95
-  - a: 101
-    b: 102
-  - a: 102
-    b: 103
-  - a: 103
-    b: 101
-  - a: 107
-    b: 108
-  - a: 108
-    b: 109
-  - a: 109
-    b: 107
-  - a: 113
-    b: 114
-  - a: 114
-    b: 115
-  - a: 115
-    b: 113
-  - a: 125
-    b: 126
-  - a: 126
-    b: 127
-  - a: 127
-    b: 125
-  - a: 131
-    b: 132
-  - a: 132
-    b: 133
-  - a: 133
-    b: 131
-  - a: 137
-    b: 138
-  - a: 138
-    b: 139
-  - a: 139
-    b: 137
-  - a: 83
-    b: 84
-  - a: 84
-    b: 85
-  - a: 85
-    b: 83
-  m_SelectedVertices: 770000007800000079000000590000005a0000005b0000005f00000060000000610000006500000066000000670000006b0000006c0000006d0000007100000072000000730000007d0000007e0000007f000000830000008400000085000000890000008a0000008b000000530000005400000055000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!64 &7490687433163611297
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2134,7 +2079,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
