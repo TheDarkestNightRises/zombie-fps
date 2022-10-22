@@ -1,16 +1,15 @@
 
 # Zombie First Person Shooter🧟‍♀️ 
 
-You are in the darkness and zombies try to hunt you. Shoot them down with your shotgun.
-
+First person shooter with horror elements. Shoot zombies and stay safe in the darkness. 
 
 ## Features
 
 - Zombie ai that chases after you and attacks you. 
 - You are in complete darkness. Use your flashlight
 - Battery and ammo pickup
-- Use different weapons  
-- You can shoot enemies
+- Use different weapons with diferent stats like range or damage
+- Shoot enemies that get close to you
 
 ## Tech Stack
 
