@@ -25,7 +25,7 @@ You are in the darkness and zombies try to hunt you. Shoot them down with your s
 
 ## Feedback
 
-If you have any feedback, please reach out to us.
+If you have any feedback, please reach out to me.
 
 
 
