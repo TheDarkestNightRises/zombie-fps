@@ -15,9 +15,9 @@ You are in the darkness and zombies try to hunt you. Shoot them down with your s
 
 **GameEngine:** Unity
 
-## Lessons Learned
+## Gameplay Screenshoots 🎲:
+![image](https://user-images.githubusercontent.com/91905169/197319795-2c7d8a67-df85-4e0a-9487-bb00e30f2d97.png)
 
-I learned how to develop a survival horror game.
 
 ## Feedback
 
