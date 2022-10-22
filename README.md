@@ -16,6 +16,9 @@ You are in the darkness and zombies try to hunt you. Shoot them down with your s
 **GameEngine:** Unity
 
 ## Gameplay Screenshoots 🎲:
+
+![image](https://user-images.githubusercontent.com/91905169/197319852-04572b61-2ce3-49b8-bc2d-e975adf7df45.png)
+
 ![image](https://user-images.githubusercontent.com/91905169/197319795-2c7d8a67-df85-4e0a-9487-bb00e30f2d97.png)
 
 
